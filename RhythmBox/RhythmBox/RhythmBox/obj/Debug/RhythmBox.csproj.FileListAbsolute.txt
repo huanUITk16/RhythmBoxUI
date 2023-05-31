@@ -1,0 +1,15 @@
+D:\Học tập\Lap trinh mang can ban\RhythmBox\RhythmBox\RhythmBox\bin\Debug\RhythmBox.exe.config
+D:\Học tập\Lap trinh mang can ban\RhythmBox\RhythmBox\RhythmBox\bin\Debug\RhythmBox.exe
+D:\Học tập\Lap trinh mang can ban\RhythmBox\RhythmBox\RhythmBox\bin\Debug\RhythmBox.pdb
+D:\Học tập\Lap trinh mang can ban\RhythmBox\RhythmBox\RhythmBox\bin\Debug\FontAwesome.Sharp.dll
+D:\Học tập\Lap trinh mang can ban\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.csproj.AssemblyReference.cache
+D:\Học tập\Lap trinh mang can ban\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.csproj.SuggestedBindingRedirects.cache
+D:\Học tập\Lap trinh mang can ban\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.Properties.Resources.resources
+D:\Học tập\Lap trinh mang can ban\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.csproj.GenerateResource.cache
+D:\Học tập\Lap trinh mang can ban\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.csproj.CoreCompileInputs.cache
+D:\Học tập\Lap trinh mang can ban\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.csproj.CopyComplete
+D:\Học tập\Lap trinh mang can ban\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.exe
+D:\Học tập\Lap trinh mang can ban\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.pdb
+D:\Học tập\Lap trinh mang can ban\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.SignUp.resources
+D:\Học tập\Lap trinh mang can ban\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.MainPage.resources
+D:\Học tập\Lap trinh mang can ban\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.SignIn.resources
