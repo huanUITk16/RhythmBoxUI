@@ -131,7 +131,7 @@ namespace RhythmBox
         {
             InitializeComponent();
         }
-
+        
         private void Form1_Load(object sender, EventArgs e)
         {
             formSize = this.ClientSize;
@@ -144,8 +144,7 @@ namespace RhythmBox
 
         private void btn_home_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender, RGBColors.color1);
-            OpenChildForm(new HomeForm());
+            btn_home.Enabled = false;
         }
 
         private void iconButton1_Click(object sender, EventArgs e)
@@ -155,7 +154,7 @@ namespace RhythmBox
 
         private void btn_user_Click(object sender, EventArgs e)
         {
-           
+            
         }
 
         private void btn_logout_Click(object sender, EventArgs e)
@@ -166,6 +165,23 @@ namespace RhythmBox
         private void panel5_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void panel7_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btn_profile_Click(object sender, EventArgs e)
+        {
+            new Profile().Show();
+            this.Hide();
+        }
+
+        private void btn_settings_Click(object sender, EventArgs e)
+        {
+            new settings().Show();
+            this.Hide() ;
         }
     }
 }
