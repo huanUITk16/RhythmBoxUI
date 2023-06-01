@@ -46,7 +46,7 @@
             this.link_signup.LinkColor = System.Drawing.Color.White;
             this.link_signup.Location = new System.Drawing.Point(154, 402);
             this.link_signup.Name = "link_signup";
-            this.link_signup.Size = new System.Drawing.Size(75, 20);
+            this.link_signup.Size = new System.Drawing.Size(65, 17);
             this.link_signup.TabIndex = 22;
             this.link_signup.TabStop = true;
             this.link_signup.Text = "Sign Up";
@@ -58,7 +58,7 @@
             this.label5.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label5.Location = new System.Drawing.Point(83, 372);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(209, 20);
+            this.label5.Size = new System.Drawing.Size(181, 17);
             this.label5.TabIndex = 21;
             this.label5.Text = "Don\'t have an Account?";
             // 
@@ -93,7 +93,7 @@
             this.checkbox_show.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.checkbox_show.Location = new System.Drawing.Point(201, 261);
             this.checkbox_show.Name = "checkbox_show";
-            this.checkbox_show.Size = new System.Drawing.Size(160, 24);
+            this.checkbox_show.Size = new System.Drawing.Size(136, 21);
             this.checkbox_show.TabIndex = 19;
             this.checkbox_show.Text = "Show Password";
             this.checkbox_show.UseVisualStyleBackColor = true;
@@ -117,7 +117,7 @@
             this.label3.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label3.Location = new System.Drawing.Point(27, 188);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(97, 20);
+            this.label3.Size = new System.Drawing.Size(82, 17);
             this.label3.TabIndex = 15;
             this.label3.Text = "Password:";
             // 
@@ -138,7 +138,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label2.Location = new System.Drawing.Point(27, 119);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 20);
+            this.label2.Size = new System.Drawing.Size(86, 17);
             this.label2.TabIndex = 13;
             this.label2.Text = "Username:";
             // 
@@ -148,13 +148,13 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(48, 64);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 25);
+            this.label1.Size = new System.Drawing.Size(66, 20);
             this.label1.TabIndex = 12;
             this.label1.Text = "Sign In";
             // 
             // SignIn
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(373, 544);

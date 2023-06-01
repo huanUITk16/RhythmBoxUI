@@ -13,3 +13,20 @@ D:\Học tập\Lap trinh mang can ban\RhythmBox\RhythmBox\RhythmBox\obj\Debug\Rh
 D:\Học tập\Lap trinh mang can ban\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.SignUp.resources
 D:\Học tập\Lap trinh mang can ban\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.MainPage.resources
 D:\Học tập\Lap trinh mang can ban\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.SignIn.resources
+E:\C#\github\RhythmBoxUI\RhythmBox\RhythmBox\RhythmBox\bin\Debug\RhythmBox.exe.config
+E:\C#\github\RhythmBoxUI\RhythmBox\RhythmBox\RhythmBox\bin\Debug\RhythmBox.exe
+E:\C#\github\RhythmBoxUI\RhythmBox\RhythmBox\RhythmBox\bin\Debug\RhythmBox.pdb
+E:\C#\github\RhythmBoxUI\RhythmBox\RhythmBox\RhythmBox\bin\Debug\FontAwesome.Sharp.dll
+E:\C#\github\RhythmBoxUI\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.csproj.AssemblyReference.cache
+E:\C#\github\RhythmBoxUI\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.csproj.SuggestedBindingRedirects.cache
+E:\C#\github\RhythmBoxUI\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.MainPage.resources
+E:\C#\github\RhythmBoxUI\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.SignIn.resources
+E:\C#\github\RhythmBoxUI\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.SignUp.resources
+E:\C#\github\RhythmBoxUI\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.Properties.Resources.resources
+E:\C#\github\RhythmBoxUI\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.csproj.GenerateResource.cache
+E:\C#\github\RhythmBoxUI\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.csproj.CoreCompileInputs.cache
+E:\C#\github\RhythmBoxUI\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.csproj.CopyComplete
+E:\C#\github\RhythmBoxUI\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.exe
+E:\C#\github\RhythmBoxUI\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.pdb
+E:\C#\github\RhythmBoxUI\RhythmBox\RhythmBox\RhythmBox\bin\Debug\Newtonsoft.Json.dll
+E:\C#\github\RhythmBoxUI\RhythmBox\RhythmBox\RhythmBox\bin\Debug\Newtonsoft.Json.xml
