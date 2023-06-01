@@ -40,7 +40,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.link_signin = new System.Windows.Forms.LinkLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.cbBox_gender = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.txt_year = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -51,6 +50,9 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txt_email = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.checkBox_male = new System.Windows.Forms.CheckBox();
+            this.checkBox_female = new System.Windows.Forms.CheckBox();
+            this.checkBox_no = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
@@ -155,7 +157,7 @@
             this.btn_signup.IconFont = FontAwesome.Sharp.IconFont.Solid;
             this.btn_signup.IconSize = 30;
             this.btn_signup.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_signup.Location = new System.Drawing.Point(85, 581);
+            this.btn_signup.Location = new System.Drawing.Point(85, 613);
             this.btn_signup.Name = "btn_signup";
             this.btn_signup.Padding = new System.Windows.Forms.Padding(40, 0, 20, 0);
             this.btn_signup.Size = new System.Drawing.Size(200, 44);
@@ -170,7 +172,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.label5.Location = new System.Drawing.Point(47, 644);
+            this.label5.Location = new System.Drawing.Point(47, 676);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(162, 20);
             this.label5.TabIndex = 10;
@@ -181,7 +183,7 @@
             this.link_signin.ActiveLinkColor = System.Drawing.Color.White;
             this.link_signin.AutoSize = true;
             this.link_signin.LinkColor = System.Drawing.Color.White;
-            this.link_signin.Location = new System.Drawing.Point(218, 644);
+            this.link_signin.Location = new System.Drawing.Point(218, 676);
             this.link_signin.Name = "link_signin";
             this.link_signin.Size = new System.Drawing.Size(67, 20);
             this.link_signin.TabIndex = 11;
@@ -195,24 +197,12 @@
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.linkLabel1.LinkColor = System.Drawing.Color.Firebrick;
-            this.linkLabel1.Location = new System.Drawing.Point(81, 681);
+            this.linkLabel1.Location = new System.Drawing.Point(81, 713);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(217, 20);
             this.linkLabel1.TabIndex = 12;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Or Sign Up With Google ";
-            // 
-            // cbBox_gender
-            // 
-            this.cbBox_gender.FormattingEnabled = true;
-            this.cbBox_gender.Items.AddRange(new object[] {
-            "Male",
-            "Female",
-            "Other"});
-            this.cbBox_gender.Location = new System.Drawing.Point(30, 519);
-            this.cbBox_gender.Name = "cbBox_gender";
-            this.cbBox_gender.Size = new System.Drawing.Size(121, 28);
-            this.cbBox_gender.TabIndex = 35;
             // 
             // label11
             // 
@@ -321,13 +311,48 @@
             this.label6.TabIndex = 25;
             this.label6.Text = "Email:";
             // 
+            // checkBox_male
+            // 
+            this.checkBox_male.AutoSize = true;
+            this.checkBox_male.Location = new System.Drawing.Point(30, 519);
+            this.checkBox_male.Name = "checkBox_male";
+            this.checkBox_male.Size = new System.Drawing.Size(71, 24);
+            this.checkBox_male.TabIndex = 36;
+            this.checkBox_male.Text = "Male";
+            this.checkBox_male.UseVisualStyleBackColor = true;
+            this.checkBox_male.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // checkBox_female
+            // 
+            this.checkBox_female.AutoSize = true;
+            this.checkBox_female.Location = new System.Drawing.Point(158, 519);
+            this.checkBox_female.Name = "checkBox_female";
+            this.checkBox_female.Size = new System.Drawing.Size(92, 24);
+            this.checkBox_female.TabIndex = 37;
+            this.checkBox_female.Text = "Female";
+            this.checkBox_female.UseVisualStyleBackColor = true;
+            this.checkBox_female.CheckedChanged += new System.EventHandler(this.checkBox_female_CheckedChanged);
+            // 
+            // checkBox_no
+            // 
+            this.checkBox_no.AutoSize = true;
+            this.checkBox_no.Location = new System.Drawing.Point(30, 549);
+            this.checkBox_no.Name = "checkBox_no";
+            this.checkBox_no.Size = new System.Drawing.Size(189, 24);
+            this.checkBox_no.TabIndex = 38;
+            this.checkBox_no.Text = "Don\'t prefer to say";
+            this.checkBox_no.UseVisualStyleBackColor = true;
+            this.checkBox_no.CheckedChanged += new System.EventHandler(this.checkBox_no_CheckedChanged);
+            // 
             // SignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(373, 783);
-            this.Controls.Add(this.cbBox_gender);
+            this.Controls.Add(this.checkBox_no);
+            this.Controls.Add(this.checkBox_female);
+            this.Controls.Add(this.checkBox_male);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.txt_year);
             this.Controls.Add(this.label10);
@@ -376,7 +401,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.LinkLabel link_signin;
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.ComboBox cbBox_gender;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txt_year;
         private System.Windows.Forms.Label label10;
@@ -387,5 +411,8 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txt_email;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.CheckBox checkBox_male;
+        private System.Windows.Forms.CheckBox checkBox_female;
+        private System.Windows.Forms.CheckBox checkBox_no;
     }
 }

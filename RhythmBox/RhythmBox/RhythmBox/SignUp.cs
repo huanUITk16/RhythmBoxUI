@@ -75,5 +75,48 @@ namespace RhythmBox
         {
 
         }
+
+        private void checkBox1_CheckedChanged(object sender, System.EventArgs e)
+        {
+            if (checkBox_male.Checked)
+            {
+                checkBox_female.Enabled = false;
+                checkBox_no.Enabled = false;
+            }
+            else
+            {
+                checkBox_female.Enabled = true;
+                checkBox_no.Enabled = true;
+            }
+            
+        }
+
+        private void checkBox_female_CheckedChanged(object sender, System.EventArgs e)
+        {
+            if (checkBox_female.Checked)
+            {
+                checkBox_male.Enabled = false;
+                checkBox_no.Enabled = false;
+            }
+            else
+            {
+                checkBox_male.Enabled = true;
+                checkBox_no.Enabled = true;
+            }
+        }
+
+        private void checkBox_no_CheckedChanged(object sender, System.EventArgs e)
+        {
+            if (checkBox_no.Checked)
+            {
+                checkBox_male.Enabled = false;
+                checkBox_female.Enabled = false;
+            }
+            else
+            {
+                checkBox_male.Enabled = true;
+                checkBox_female.Enabled = true;
+            }
+        }
     }
 }
