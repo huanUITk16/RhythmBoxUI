@@ -70,5 +70,10 @@ namespace RhythmBox
         {
 
         }
+
+        private void cbBox_month_SelectedIndexChanged(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }
