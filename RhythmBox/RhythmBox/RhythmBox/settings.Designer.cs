@@ -45,6 +45,9 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
@@ -69,6 +72,7 @@
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             this.panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
@@ -118,6 +122,7 @@
             this.btn_album.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_album.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_album.UseVisualStyleBackColor = true;
+            this.btn_album.Click += new System.EventHandler(this.btn_album_Click);
             // 
             // btn_artist
             // 
@@ -139,6 +144,7 @@
             this.btn_artist.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_artist.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_artist.UseVisualStyleBackColor = true;
+            this.btn_artist.Click += new System.EventHandler(this.btn_artist_Click);
             // 
             // btn_playlist
             // 
@@ -160,6 +166,7 @@
             this.btn_playlist.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_playlist.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_playlist.UseVisualStyleBackColor = true;
+            this.btn_playlist.Click += new System.EventHandler(this.btn_playlist_Click);
             // 
             // panel1
             // 
@@ -195,6 +202,7 @@
             this.btn_search.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_search.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_search.UseVisualStyleBackColor = true;
+            this.btn_search.Click += new System.EventHandler(this.btn_search_Click);
             // 
             // btn_logout
             // 
@@ -335,6 +343,9 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel6.Controls.Add(this.label11);
+            this.panel6.Controls.Add(this.label10);
+            this.panel6.Controls.Add(this.iconPictureBox5);
             this.panel6.Controls.Add(this.iconPictureBox2);
             this.panel6.Controls.Add(this.label4);
             this.panel6.Controls.Add(this.panel10);
@@ -343,6 +354,40 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(263, 549);
             this.panel6.TabIndex = 3;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(109, 288);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(55, 20);
+            this.label11.TabIndex = 37;
+            this.label11.Text = "Artist";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(86, 259);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(102, 20);
+            this.label10.TabIndex = 36;
+            this.label10.Text = "Song name";
+            // 
+            // iconPictureBox5
+            // 
+            this.iconPictureBox5.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.iconPictureBox5.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox5.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconPictureBox5.IconColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox5.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox5.IconSize = 143;
+            this.iconPictureBox5.Location = new System.Drawing.Point(67, 96);
+            this.iconPictureBox5.Name = "iconPictureBox5";
+            this.iconPictureBox5.Size = new System.Drawing.Size(143, 160);
+            this.iconPictureBox5.TabIndex = 35;
+            this.iconPictureBox5.TabStop = false;
             // 
             // iconPictureBox2
             // 
@@ -485,10 +530,10 @@
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.None;
             this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 43;
-            this.iconPictureBox1.Location = new System.Drawing.Point(230, 233);
+            this.iconPictureBox1.IconSize = 44;
+            this.iconPictureBox1.Location = new System.Drawing.Point(236, 232);
             this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(63, 43);
+            this.iconPictureBox1.Size = new System.Drawing.Size(56, 44);
             this.iconPictureBox1.TabIndex = 5;
             this.iconPictureBox1.TabStop = false;
             // 
@@ -527,7 +572,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(313, 400);
+            this.label6.Location = new System.Drawing.Point(313, 397);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(89, 20);
             this.label6.TabIndex = 9;
@@ -567,14 +612,14 @@
             // txt_location
             // 
             this.txt_location.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.txt_location.Location = new System.Drawing.Point(352, 565);
+            this.txt_location.Location = new System.Drawing.Point(368, 570);
             this.txt_location.Name = "txt_location";
             this.txt_location.Size = new System.Drawing.Size(534, 22);
             this.txt_location.TabIndex = 13;
             // 
             // btn_changeLocation
             // 
-            this.btn_changeLocation.Location = new System.Drawing.Point(908, 561);
+            this.btn_changeLocation.Location = new System.Drawing.Point(927, 566);
             this.btn_changeLocation.Name = "btn_changeLocation";
             this.btn_changeLocation.Size = new System.Drawing.Size(134, 31);
             this.btn_changeLocation.TabIndex = 14;
@@ -611,6 +656,7 @@
             this.panel2.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             this.panel10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
@@ -656,5 +702,8 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txt_location;
         private System.Windows.Forms.Button btn_changeLocation;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox5;
     }
 }

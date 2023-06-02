@@ -137,5 +137,29 @@ namespace RhythmBox
             MainPage.Show();
             this.Hide();
         }
+
+        private void btn_search_Click(object sender, EventArgs e)
+        {
+            new searchPage().Show();
+            this.Hide();
+        }
+
+        private void btn_playlist_Click(object sender, EventArgs e)
+        {
+            new playlistPage().Show();
+            this.Hide();
+        }
+
+        private void btn_artist_Click(object sender, EventArgs e)
+        {
+            new Artist().Show();
+            this.Hide();
+        }
+
+        private void btn_album_Click(object sender, EventArgs e)
+        {
+            new Album().Show();
+            this.Hide();
+        }
     }
 }

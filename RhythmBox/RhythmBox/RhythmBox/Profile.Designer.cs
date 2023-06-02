@@ -65,6 +65,9 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.iconPictureBox6 = new FontAwesome.Sharp.IconPictureBox();
             this.panelMenu.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -80,6 +83,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).BeginInit();
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -126,6 +130,7 @@
             this.btn_album.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_album.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_album.UseVisualStyleBackColor = true;
+            this.btn_album.Click += new System.EventHandler(this.btn_album_Click);
             // 
             // btn_artist
             // 
@@ -147,6 +152,7 @@
             this.btn_artist.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_artist.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_artist.UseVisualStyleBackColor = true;
+            this.btn_artist.Click += new System.EventHandler(this.btn_artist_Click);
             // 
             // btn_playlist
             // 
@@ -168,6 +174,7 @@
             this.btn_playlist.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_playlist.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_playlist.UseVisualStyleBackColor = true;
+            this.btn_playlist.Click += new System.EventHandler(this.btn_playlist_Click);
             // 
             // panel1
             // 
@@ -203,6 +210,7 @@
             this.btn_search.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_search.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_search.UseVisualStyleBackColor = true;
+            this.btn_search.Click += new System.EventHandler(this.btn_search_Click);
             // 
             // btn_logout
             // 
@@ -361,6 +369,9 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel6.Controls.Add(this.label11);
+            this.panel6.Controls.Add(this.label10);
+            this.panel6.Controls.Add(this.iconPictureBox6);
             this.panel6.Controls.Add(this.iconPictureBox2);
             this.panel6.Controls.Add(this.label4);
             this.panel6.Controls.Add(this.panel10);
@@ -626,6 +637,40 @@
             this.label6.TabIndex = 2;
             this.label6.Text = "Followings";
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(109, 251);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(55, 20);
+            this.label11.TabIndex = 37;
+            this.label11.Text = "Artist";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(86, 222);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(102, 20);
+            this.label10.TabIndex = 36;
+            this.label10.Text = "Song name";
+            // 
+            // iconPictureBox6
+            // 
+            this.iconPictureBox6.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.iconPictureBox6.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox6.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconPictureBox6.IconColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox6.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox6.IconSize = 143;
+            this.iconPictureBox6.Location = new System.Drawing.Point(67, 59);
+            this.iconPictureBox6.Name = "iconPictureBox6";
+            this.iconPictureBox6.Size = new System.Drawing.Size(143, 160);
+            this.iconPictureBox6.TabIndex = 35;
+            this.iconPictureBox6.TabStop = false;
+            // 
             // Profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -662,6 +707,7 @@
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -704,5 +750,8 @@
         private System.Windows.Forms.Panel panel9;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox6;
     }
 }
