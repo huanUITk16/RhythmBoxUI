@@ -60,18 +60,22 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AlbumForm.cs">
+    <Compile Include="Album.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AlbumForm.Designer.cs">
-      <DependentUpon>AlbumForm.cs</DependentUpon>
+    <Compile Include="Album.Designer.cs">
+      <DependentUpon>Album.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Artist.cs" />
     <Compile Include="ArtistForm.cs">
+=======
+    <Compile Include="Artist.cs">
+>>>>>>> main
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ArtistForm.Designer.cs">
-      <DependentUpon>ArtistForm.cs</DependentUpon>
+    <Compile Include="Artist.Designer.cs">
+      <DependentUpon>Artist.cs</DependentUpon>
     </Compile>
     <Compile Include="MainPage.cs">
       <SubType>Form</SubType>
@@ -79,11 +83,29 @@
     <Compile Include="MainPage.Designer.cs">
       <DependentUpon>MainPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="HomeForm.cs">
+    <Compile Include="playlistPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="HomeForm.Designer.cs">
-      <DependentUpon>HomeForm.cs</DependentUpon>
+    <Compile Include="playlistPage.Designer.cs">
+      <DependentUpon>playlistPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profile.Designer.cs">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="searchPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchPage.Designer.cs">
+      <DependentUpon>searchPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="settings.Designer.cs">
+      <DependentUpon>settings.cs</DependentUpon>
     </Compile>
     <Compile Include="SignIn.cs">
       <SubType>Form</SubType>
@@ -97,14 +119,9 @@
     <Compile Include="SignUp.Designer.cs">
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
-    <Compile Include="PlaylistForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PlaylistForm.Designer.cs">
-      <DependentUpon>PlaylistForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+<<<<<<< HEAD
     <Compile Include="SearchForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,8 +129,28 @@
       <DependentUpon>SearchForm.cs</DependentUpon>
     </Compile>
     <Compile Include="UserInfo.cs" />
+=======
+    <EmbeddedResource Include="Album.resx">
+      <DependentUpon>Album.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Artist.resx">
+      <DependentUpon>Artist.cs</DependentUpon>
+    </EmbeddedResource>
+>>>>>>> main
     <EmbeddedResource Include="MainPage.resx">
       <DependentUpon>MainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="playlistPage.resx">
+      <DependentUpon>playlistPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profile.resx">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchPage.resx">
+      <DependentUpon>searchPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="settings.resx">
+      <DependentUpon>settings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SignIn.resx">
       <DependentUpon>SignIn.cs</DependentUpon>

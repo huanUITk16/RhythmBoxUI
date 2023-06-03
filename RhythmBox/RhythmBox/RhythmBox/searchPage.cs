@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FontAwesome.Sharp;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,11 +9,10 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using FontAwesome.Sharp;
+
 namespace RhythmBox
 {
-
-    public partial class MainPage : Form
+    public partial class searchPage : Form
     {
         private int borderSize = 2;
         private Size formSize;
@@ -53,24 +53,7 @@ namespace RhythmBox
                     break;
             }
         }
-        private void OpenChildForm(Form childForm)
-        {
-            //open only form
-            if (currentChildForm != null)
-            {
-                currentChildForm.Close();
-            }
-            currentChildForm = childForm;
-            //End
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            panelDesktop.Controls.Add(childForm);
-            panelDesktop.Tag = childForm;
-            childForm.BringToFront();
-            childForm.Show();
-            //lblTitleChildForm.Text = childForm.Text;
-        }
+
         private void ActivateButton(object senderBtn, Color color)
         {
             if (senderBtn != null)
@@ -127,49 +110,21 @@ namespace RhythmBox
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
-        public MainPage()
+        public searchPage()
         {
             InitializeComponent();
         }
-        
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            formSize = this.ClientSize;
-        }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void searchPage_Load(object sender, EventArgs e)
         {
 
         }
 
         private void btn_home_Click(object sender, EventArgs e)
         {
-            btn_home.Enabled = false;
-        }
-
-        private void iconButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_user_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void btn_logout_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void panel5_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel7_Paint(object sender, PaintEventArgs e)
-        {
-
+            Form MainPage = Application.OpenForms["MainPage"];
+            MainPage.Show();
+            this.Hide();
         }
 
         private void btn_profile_Click(object sender, EventArgs e)
@@ -181,12 +136,6 @@ namespace RhythmBox
         private void btn_settings_Click(object sender, EventArgs e)
         {
             new settings().Show();
-            this.Hide() ;
-        }
-
-        private void btn_search_Click(object sender, EventArgs e)
-        {
-            new searchPage().Show();
             this.Hide();
         }
 
@@ -194,6 +143,11 @@ namespace RhythmBox
         {
             new playlistPage().Show();
             this.Hide();
+        }
+
+        private void btn_search_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void btn_artist_Click(object sender, EventArgs e)

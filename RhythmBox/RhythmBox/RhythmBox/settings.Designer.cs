@@ -1,6 +1,6 @@
 ﻿namespace RhythmBox
 {
-    partial class MainPage
+    partial class settings
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainPage));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(settings));
             this.panelMenu = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btn_album = new FontAwesome.Sharp.IconButton();
@@ -44,14 +44,10 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.panelDesktop = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.iconPictureBox4 = new FontAwesome.Sharp.IconPictureBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
@@ -60,27 +56,26 @@
             this.btn_shuffle = new FontAwesome.Sharp.IconButton();
             this.btn_play = new FontAwesome.Sharp.IconButton();
             this.btn_next = new FontAwesome.Sharp.IconButton();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txt_location = new System.Windows.Forms.TextBox();
+            this.btn_changeLocation = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panelDesktop.SuspendLayout();
-            this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).BeginInit();
-            this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             this.panel10.SuspendLayout();
-            this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -94,7 +89,7 @@
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(230, 758);
-            this.panelMenu.TabIndex = 0;
+            this.panelMenu.TabIndex = 1;
             // 
             // panel3
             // 
@@ -229,7 +224,6 @@
             this.btn_logout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_logout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_logout.UseVisualStyleBackColor = true;
-            this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
             // 
             // btn_settings
             // 
@@ -251,7 +245,6 @@
             this.btn_settings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_settings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_settings.UseVisualStyleBackColor = true;
-            this.btn_settings.Click += new System.EventHandler(this.btn_settings_Click);
             // 
             // btn_profile
             // 
@@ -295,7 +288,6 @@
             this.btn_user.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_user.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_user.UseVisualStyleBackColor = true;
-            this.btn_user.Click += new System.EventHandler(this.btn_user_Click);
             // 
             // btn_home
             // 
@@ -335,7 +327,7 @@
             this.panel2.Location = new System.Drawing.Point(230, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1494, 209);
-            this.panel2.TabIndex = 1;
+            this.panel2.TabIndex = 2;
             // 
             // label5
             // 
@@ -348,96 +340,6 @@
             this.label5.TabIndex = 3;
             this.label5.Text = "Panel Background";
             // 
-            // panelDesktop
-            // 
-            this.panelDesktop.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.panelDesktop.Controls.Add(this.panel9);
-            this.panelDesktop.Controls.Add(this.panel7);
-            this.panelDesktop.Controls.Add(this.panel6);
-            this.panelDesktop.Controls.Add(this.panel5);
-            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktop.Location = new System.Drawing.Point(230, 209);
-            this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(1494, 549);
-            this.panelDesktop.TabIndex = 2;
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel9.Controls.Add(this.iconPictureBox4);
-            this.panel9.Controls.Add(this.label3);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel9.Location = new System.Drawing.Point(0, 384);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(1231, 165);
-            this.panel9.TabIndex = 5;
-            // 
-            // iconPictureBox4
-            // 
-            this.iconPictureBox4.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.iconPictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("iconPictureBox4.BackgroundImage")));
-            this.iconPictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.iconPictureBox4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox4.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconPictureBox4.IconColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox4.IconSize = 43;
-            this.iconPictureBox4.Location = new System.Drawing.Point(0, 23);
-            this.iconPictureBox4.Name = "iconPictureBox4";
-            this.iconPictureBox4.Size = new System.Drawing.Size(63, 43);
-            this.iconPictureBox4.TabIndex = 5;
-            this.iconPictureBox4.TabStop = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(0, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(34, 20);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Hit";
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel7.Controls.Add(this.iconPictureBox3);
-            this.panel7.Controls.Add(this.label1);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(0, 171);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1231, 213);
-            this.panel7.TabIndex = 2;
-            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
-            // 
-            // iconPictureBox3
-            // 
-            this.iconPictureBox3.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.iconPictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("iconPictureBox3.BackgroundImage")));
-            this.iconPictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.iconPictureBox3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconPictureBox3.IconColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox3.IconSize = 43;
-            this.iconPictureBox3.Location = new System.Drawing.Point(0, 25);
-            this.iconPictureBox3.Name = "iconPictureBox3";
-            this.iconPictureBox3.Size = new System.Drawing.Size(63, 43);
-            this.iconPictureBox3.TabIndex = 4;
-            this.iconPictureBox3.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(144, 20);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Recently Played";
-            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -448,10 +350,44 @@
             this.panel6.Controls.Add(this.label4);
             this.panel6.Controls.Add(this.panel10);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel6.Location = new System.Drawing.Point(1231, 171);
+            this.panel6.Location = new System.Drawing.Point(1461, 209);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(263, 378);
-            this.panel6.TabIndex = 1;
+            this.panel6.Size = new System.Drawing.Size(263, 549);
+            this.panel6.TabIndex = 3;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(109, 288);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(55, 20);
+            this.label11.TabIndex = 37;
+            this.label11.Text = "Artist";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(86, 259);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(102, 20);
+            this.label10.TabIndex = 36;
+            this.label10.Text = "Song name";
+            // 
+            // iconPictureBox5
+            // 
+            this.iconPictureBox5.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.iconPictureBox5.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox5.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconPictureBox5.IconColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox5.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox5.IconSize = 143;
+            this.iconPictureBox5.Location = new System.Drawing.Point(67, 96);
+            this.iconPictureBox5.Name = "iconPictureBox5";
+            this.iconPictureBox5.Size = new System.Drawing.Size(143, 160);
+            this.iconPictureBox5.TabIndex = 35;
+            this.iconPictureBox5.TabStop = false;
             // 
             // iconPictureBox2
             // 
@@ -489,7 +425,7 @@
             this.panel10.Controls.Add(this.btn_play);
             this.panel10.Controls.Add(this.btn_next);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel10.Location = new System.Drawing.Point(0, 213);
+            this.panel10.Location = new System.Drawing.Point(0, 384);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(263, 165);
             this.panel10.TabIndex = 0;
@@ -574,17 +510,16 @@
             this.btn_next.TabIndex = 2;
             this.btn_next.UseVisualStyleBackColor = true;
             // 
-            // panel5
+            // label1
             // 
-            this.panel5.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel5.Controls.Add(this.iconPictureBox1);
-            this.panel5.Controls.Add(this.label2);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1494, 171);
-            this.panel5.TabIndex = 0;
-            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
+            this.label1.AutoSize = true;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(230, 209);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(78, 20);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Settings";
             // 
             // iconPictureBox1
             // 
@@ -595,133 +530,180 @@
             this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.None;
             this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 43;
-            this.iconPictureBox1.Location = new System.Drawing.Point(0, 23);
+            this.iconPictureBox1.IconSize = 44;
+            this.iconPictureBox1.Location = new System.Drawing.Point(236, 232);
             this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(63, 43);
-            this.iconPictureBox1.TabIndex = 3;
+            this.iconPictureBox1.Size = new System.Drawing.Size(56, 44);
+            this.iconPictureBox1.TabIndex = 5;
             this.iconPictureBox1.TabStop = false;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Location = new System.Drawing.Point(313, 285);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 20);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Top Artist";
+            this.label2.Size = new System.Drawing.Size(90, 20);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Language";
             // 
-            // label11
+            // label3
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(109, 180);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(55, 20);
-            this.label11.TabIndex = 37;
-            this.label11.Text = "Artist";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(348, 340);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(511, 20);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Choose your language, apply changes by restarting your application";
             // 
-            // label10
+            // comboBox1
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(86, 151);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(102, 20);
-            this.label10.TabIndex = 36;
-            this.label10.Text = "Song name";
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "English (default)",
+            "Vietnamese"});
+            this.comboBox1.Location = new System.Drawing.Point(894, 340);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.TabIndex = 8;
             // 
-            // iconPictureBox5
+            // label6
             // 
-            this.iconPictureBox5.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.iconPictureBox5.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox5.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconPictureBox5.IconColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox5.IconSize = 125;
-            this.iconPictureBox5.Location = new System.Drawing.Point(67, 23);
-            this.iconPictureBox5.Name = "iconPictureBox5";
-            this.iconPictureBox5.Size = new System.Drawing.Size(143, 125);
-            this.iconPictureBox5.TabIndex = 35;
-            this.iconPictureBox5.TabStop = false;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(313, 397);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(89, 20);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Auto Play";
             // 
-            // MainPage
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(348, 455);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(465, 20);
+            this.label7.TabIndex = 10;
+            this.label7.Text = "You don\'t need to move to the next audio, we\'ll do that for you";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(313, 506);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(91, 20);
+            this.label8.TabIndex = 11;
+            this.label8.Text = "Download";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(325, 541);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(81, 20);
+            this.label9.TabIndex = 12;
+            this.label9.Text = "Location";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
+            // 
+            // txt_location
+            // 
+            this.txt_location.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txt_location.Location = new System.Drawing.Point(368, 570);
+            this.txt_location.Name = "txt_location";
+            this.txt_location.Size = new System.Drawing.Size(534, 22);
+            this.txt_location.TabIndex = 13;
+            // 
+            // btn_changeLocation
+            // 
+            this.btn_changeLocation.Location = new System.Drawing.Point(927, 566);
+            this.btn_changeLocation.Name = "btn_changeLocation";
+            this.btn_changeLocation.Size = new System.Drawing.Size(134, 31);
+            this.btn_changeLocation.TabIndex = 14;
+            this.btn_changeLocation.Text = "Change Location";
+            this.btn_changeLocation.UseVisualStyleBackColor = true;
+            // 
+            // settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Silver;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1724, 758);
-            this.Controls.Add(this.panelDesktop);
+            this.Controls.Add(this.btn_changeLocation);
+            this.Controls.Add(this.txt_location);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.iconPictureBox1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelMenu);
-            this.Name = "MainPage";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Name = "settings";
+            this.Text = "settings";
+            this.Load += new System.EventHandler(this.settings_Load);
             this.panelMenu.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panelDesktop.ResumeLayout(false);
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).EndInit();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             this.panel10.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Panel panelMenu;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panelDesktop;
-        private FontAwesome.Sharp.IconButton btn_home;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel1;
-        private FontAwesome.Sharp.IconButton btn_profile;
-        private FontAwesome.Sharp.IconButton btn_user;
         private System.Windows.Forms.Panel panel3;
         private FontAwesome.Sharp.IconButton btn_album;
         private FontAwesome.Sharp.IconButton btn_artist;
         private FontAwesome.Sharp.IconButton btn_playlist;
+        private System.Windows.Forms.Panel panel1;
         private FontAwesome.Sharp.IconButton btn_search;
         private FontAwesome.Sharp.IconButton btn_logout;
         private FontAwesome.Sharp.IconButton btn_settings;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel7;
+        private FontAwesome.Sharp.IconButton btn_profile;
+        private FontAwesome.Sharp.IconButton btn_user;
+        private FontAwesome.Sharp.IconButton btn_home;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel6;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
+        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel10;
         private FontAwesome.Sharp.IconButton btn_repeat;
         private FontAwesome.Sharp.IconButton btn_back;
         private FontAwesome.Sharp.IconButton btn_shuffle;
         private FontAwesome.Sharp.IconButton btn_play;
         private FontAwesome.Sharp.IconButton btn_next;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label2;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox4;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txt_location;
+        private System.Windows.Forms.Button btn_changeLocation;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox5;
     }
 }
-
