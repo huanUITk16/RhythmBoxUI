@@ -34,3 +34,6 @@ D:\Học tập\Lap trinh mang can ban\HopAmNhac\RhythmBox\RhythmBox\RhythmBox\ob
 D:\Học tập\Lap trinh mang can ban\HopAmNhac\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.playlistPage.resources
 D:\Học tập\Lap trinh mang can ban\HopAmNhac\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.Artist.resources
 D:\Học tập\Lap trinh mang can ban\HopAmNhac\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.Album.resources
+D:\Học tập\Lap trinh mang can ban\HopAmNhac\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.enterCodeResetPassword.resources
+D:\Học tập\Lap trinh mang can ban\HopAmNhac\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.forgotPassword.resources
+D:\Học tập\Lap trinh mang can ban\HopAmNhac\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.resetPassword.resources

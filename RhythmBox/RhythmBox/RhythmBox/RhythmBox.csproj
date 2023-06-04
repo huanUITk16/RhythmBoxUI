@@ -69,6 +69,18 @@
     <Compile Include="Artist.Designer.cs">
       <DependentUpon>Artist.cs</DependentUpon>
     </Compile>
+    <Compile Include="enterCodeResetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="enterCodeResetPassword.Designer.cs">
+      <DependentUpon>enterCodeResetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forgotPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forgotPassword.Designer.cs">
+      <DependentUpon>forgotPassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +98,12 @@
     </Compile>
     <Compile Include="Profile.Designer.cs">
       <DependentUpon>Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="resetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="resetPassword.Designer.cs">
+      <DependentUpon>resetPassword.cs</DependentUpon>
     </Compile>
     <Compile Include="searchPage.cs">
       <SubType>Form</SubType>
@@ -119,6 +137,12 @@
     <EmbeddedResource Include="Artist.resx">
       <DependentUpon>Artist.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="enterCodeResetPassword.resx">
+      <DependentUpon>enterCodeResetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forgotPassword.resx">
+      <DependentUpon>forgotPassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainPage.resx">
       <DependentUpon>MainPage.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,6 +151,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Profile.resx">
       <DependentUpon>Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resetPassword.resx">
+      <DependentUpon>resetPassword.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="searchPage.resx">
       <DependentUpon>searchPage.cs</DependentUpon>
