@@ -1,21 +1,95 @@
-﻿using System.Data.OleDb;
-using System.Windows.Forms;
-using System.Data.OleDb;
+﻿using System.Windows.Forms;
+using Newtonsoft.Json;
+using System.Security.Cryptography;
+using System.Text;
+using System;
+
 namespace RhythmBox
 {
     public partial class SignUp : Form
     {
+        private string hashPassword(string password)
+        {
+            SHA256 sha256Hash = SHA256.Create();
+            byte[] bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(password));
+            return Convert.ToBase64String(bytes);
+        }
+
+        public bool isValidPass(string password1, string password2)
+        {
+            if (password1.Length < 3)
+                return false;
+            else if (password1 != password2)
+                return false;
+            return true;
+        }
+
+        public int IntMonth(string sMonth)
+        {
+            switch (sMonth)
+            {
+                case "January":
+                    return 1;
+                case "February":
+                    return 2;
+                case "March":
+                    return 3;
+                case "April":
+                    return 4;
+                case "May":
+                    return 5;
+                case "June":
+                    return 6;
+                case "July":
+                    return 7;
+                case "August":
+                    return 8;
+                case "September":
+                    return 9;
+                case "October":
+                    return 10;
+                case "November":
+                    return 11;
+                case "December":
+                    return 12;
+                default:
+                    return 0;
+            }
+        }
+
+        public string checkboxtostringGender()
+        {
+            if (checkBox_male.Checked)
+                return "Male";
+            else if (checkBox_female.Checked)
+                return "Female";
+            else if (checkBox_no.Checked)
+                return "Other";
+            return "Error Gender!!";
+        }
+
+        private string packageSignUp()
+        {
+            string strUsername = txt_userSU.Text;
+            string strTypePassword = hashPassword(txt_passwordSU.Text);
+            string strEmail = txt_email.Text;
+            string strGender = checkboxtostringGender();
+            int iYear = int.Parse(txt_year.Text);
+            int iMonth = IntMonth(cbBox_month.Text);
+            int iDate = int.Parse(txt_day.Text);
+            DateTime dBirthday = new DateTime(iYear, iMonth, iDate);
+
+            UserSignUpDataClass newuser = new UserSignUpDataClass(strUsername, strTypePassword, strEmail, dBirthday, strGender);
+
+            string strResultJson = JsonConvert.SerializeObject(newuser);
+
+            return strResultJson;
+        }
+
         public SignUp()
         {
             InitializeComponent();
             
-        }
-        OleDbConnection conn = new OleDbConnection("Provider= Microsoft.Jet.OLEDB.4.0;Data Source = database_user.mdb");
-        OleDbCommand cmd = new OleDbCommand();
-        OleDbDataAdapter da = new OleDbDataAdapter();
-        private void label1_Click(object sender, System.EventArgs e)
-        {
-
         }
 
         private void btn_signup_Click(object sender, System.EventArgs e)
