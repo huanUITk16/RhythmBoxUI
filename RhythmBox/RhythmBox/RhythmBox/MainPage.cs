@@ -159,7 +159,8 @@ namespace RhythmBox
 
         private void btn_logout_Click(object sender, EventArgs e)
         {
-            
+            new SignIn().Show();
+            this.Close();
         }
 
         private void panel5_Paint(object sender, PaintEventArgs e)

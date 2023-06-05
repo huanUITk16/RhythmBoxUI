@@ -224,6 +224,7 @@
             this.btn_logout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_logout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_logout.UseVisualStyleBackColor = true;
+            this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
             // 
             // btn_settings
             // 
@@ -368,10 +369,16 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.label11.Location = new System.Drawing.Point(82, 234);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(46, 17);
+=======
+            this.label11.Location = new System.Drawing.Point(109, 288);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(55, 20);
+>>>>>>> main
             this.label11.TabIndex = 37;
             this.label11.Text = "Artist";
             // 
@@ -379,10 +386,16 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.label10.Location = new System.Drawing.Point(64, 210);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(89, 17);
+=======
+            this.label10.Location = new System.Drawing.Point(86, 259);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(102, 20);
+>>>>>>> main
             this.label10.TabIndex = 36;
             this.label10.Text = "Song name";
             // 
@@ -393,11 +406,18 @@
             this.iconPictureBox5.IconChar = FontAwesome.Sharp.IconChar.None;
             this.iconPictureBox5.IconColor = System.Drawing.SystemColors.ControlText;
             this.iconPictureBox5.IconFont = FontAwesome.Sharp.IconFont.Auto;
+<<<<<<< HEAD
             this.iconPictureBox5.IconSize = 107;
             this.iconPictureBox5.Location = new System.Drawing.Point(50, 78);
             this.iconPictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.iconPictureBox5.Name = "iconPictureBox5";
             this.iconPictureBox5.Size = new System.Drawing.Size(107, 130);
+=======
+            this.iconPictureBox5.IconSize = 143;
+            this.iconPictureBox5.Location = new System.Drawing.Point(67, 96);
+            this.iconPictureBox5.Name = "iconPictureBox5";
+            this.iconPictureBox5.Size = new System.Drawing.Size(143, 160);
+>>>>>>> main
             this.iconPictureBox5.TabIndex = 35;
             this.iconPictureBox5.TabStop = false;
             // 

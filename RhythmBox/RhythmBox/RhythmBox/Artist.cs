@@ -156,5 +156,11 @@ namespace RhythmBox
             new Album().Show();
             this.Hide();
         }
+
+        private void btn_logout_Click(object sender, EventArgs e)
+        {
+            new SignIn().Show();
+            this.Close();
+        }
     }
 }

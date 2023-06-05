@@ -52,6 +52,9 @@
             this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
@@ -63,9 +66,6 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
             this.panelMenu.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -76,11 +76,11 @@
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
             this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             this.panel10.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMenu
@@ -453,6 +453,40 @@
             this.panel6.Size = new System.Drawing.Size(263, 378);
             this.panel6.TabIndex = 1;
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(109, 180);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(55, 20);
+            this.label11.TabIndex = 37;
+            this.label11.Text = "Artist";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(86, 151);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(102, 20);
+            this.label10.TabIndex = 36;
+            this.label10.Text = "Song name";
+            // 
+            // iconPictureBox5
+            // 
+            this.iconPictureBox5.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.iconPictureBox5.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox5.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconPictureBox5.IconColor = System.Drawing.SystemColors.ControlText;
+            this.iconPictureBox5.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox5.IconSize = 125;
+            this.iconPictureBox5.Location = new System.Drawing.Point(67, 23);
+            this.iconPictureBox5.Name = "iconPictureBox5";
+            this.iconPictureBox5.Size = new System.Drawing.Size(143, 125);
+            this.iconPictureBox5.TabIndex = 35;
+            this.iconPictureBox5.TabStop = false;
+            // 
             // iconPictureBox2
             // 
             this.iconPictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -613,40 +647,6 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Top Artist";
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(109, 180);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(55, 20);
-            this.label11.TabIndex = 37;
-            this.label11.Text = "Artist";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(86, 151);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(102, 20);
-            this.label10.TabIndex = 36;
-            this.label10.Text = "Song name";
-            // 
-            // iconPictureBox5
-            // 
-            this.iconPictureBox5.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.iconPictureBox5.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox5.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconPictureBox5.IconColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox5.IconSize = 125;
-            this.iconPictureBox5.Location = new System.Drawing.Point(67, 23);
-            this.iconPictureBox5.Name = "iconPictureBox5";
-            this.iconPictureBox5.Size = new System.Drawing.Size(143, 125);
-            this.iconPictureBox5.TabIndex = 35;
-            this.iconPictureBox5.TabStop = false;
-            // 
             // MainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -673,12 +673,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             this.panel10.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }

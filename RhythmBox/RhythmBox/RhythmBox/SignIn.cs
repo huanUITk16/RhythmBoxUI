@@ -71,5 +71,11 @@ namespace RhythmBox
                 
             }
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            new forgotPassword().Show();
+            this.Hide();
+        }
     }
 }

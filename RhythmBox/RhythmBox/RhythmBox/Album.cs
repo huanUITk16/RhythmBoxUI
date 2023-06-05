@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace RhythmBox
 {
-    public partial class searchPage : Form
+    public partial class Album : Form
     {
         private int borderSize = 2;
         private Size formSize;
@@ -110,12 +110,12 @@ namespace RhythmBox
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
-        public searchPage()
+        public Album()
         {
             InitializeComponent();
         }
 
-        private void searchPage_Load(object sender, EventArgs e)
+        private void Album_Load(object sender, EventArgs e)
         {
 
         }
@@ -139,26 +139,21 @@ namespace RhythmBox
             this.Hide();
         }
 
-        private void btn_playlist_Click(object sender, EventArgs e)
+        private void btn_search_Click(object sender, EventArgs e)
         {
-            new playlistPage().Show();
+            new searchPage().Show();
             this.Hide();
         }
 
-        private void btn_search_Click(object sender, EventArgs e)
+        private void btn_playlist_Click(object sender, EventArgs e)
         {
-
+            new playlistPage().Show(); 
+            this.Hide();
         }
 
         private void btn_artist_Click(object sender, EventArgs e)
         {
             new Artist().Show();
-            this.Hide();
-        }
-
-        private void btn_album_Click(object sender, EventArgs e)
-        {
-            new Album().Show();
             this.Hide();
         }
 
