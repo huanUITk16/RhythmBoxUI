@@ -140,6 +140,7 @@
     <Compile Include="signupGoogle.Designer.cs">
       <DependentUpon>signupGoogle.cs</DependentUpon>
     </Compile>
+    <Compile Include="TokenManager.cs" />
     <Compile Include="UserSignInDataClass.cs" />
     <Compile Include="UserSignUpDataClass.cs" />
     <EmbeddedResource Include="Album.resx">
