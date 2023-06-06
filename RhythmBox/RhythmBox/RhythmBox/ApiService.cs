@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Data.SqlTypes;
 using System.Linq;
 using System.Net.Http;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -53,6 +54,66 @@ namespace RhythmBox
             }
 
             return false;
+        }
+
+        public async Task<bool> ForgotPassword(string email)
+        {
+            var request = new
+            {
+                email = email
+            };
+            var requestJson = JsonConvert.SerializeObject(request);
+
+            var content = new StringContent(requestJson, Encoding.UTF8, "application/json");
+
+            var response = await httpClient.PostAsync($"{BaseUrl}/forgotpassword", content);
+
+            if (!response.IsSuccessStatusCode)
+                return false;
+            return true;
+        }
+
+        public async Task<bool> AuthOTP(string email, int enteredOtp)
+        {
+            try
+            {
+                var otpRequest = new
+                {
+                    email = email,
+                    otp = enteredOtp
+                };
+
+                var otpRequestJson = JsonConvert.SerializeObject(otpRequest);
+
+                var content = new StringContent(otpRequestJson, Encoding.UTF8, "application/json");
+
+                var response = await httpClient.PostAsync($"{BaseUrl}/Authentication", content);
+
+                return response.IsSuccessStatusCode;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+        }
+
+        public async Task<bool> RenewPassword(string email, string newpass)
+        {
+            var request = new
+            {
+                email = email,
+                newpass = newpass
+
+            };
+            var requestJson = JsonConvert.SerializeObject(request);
+
+            var content = new StringContent(requestJson, Encoding.UTF8, "application/json");
+
+            var response = await httpClient.PostAsync($"{BaseUrl}/RenewPassword", content);
+
+            if (!response.IsSuccessStatusCode)
+                return false;
+            return true;
         }
     }
 }
