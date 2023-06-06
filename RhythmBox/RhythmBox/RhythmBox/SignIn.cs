@@ -14,6 +14,7 @@ namespace RhythmBox
 {
     public partial class SignIn : Form
     {
+        ApiService apiService = new ApiService();
         private string harshPassword(string password)
         {
             SHA256 sha256Hash = SHA256.Create();
@@ -46,10 +47,23 @@ namespace RhythmBox
             InitializeComponent();
         }
 
-        private void btn_signin_Click(object sender, EventArgs e)
+        private async void btn_signin_Click(object sender, EventArgs e)
         {
-            new MainPage().Show();
-            this.Hide();
+            bool signinRes = await apiService.SignIn(txt_userSI.Text, txt_passwordSI.Text);
+
+            if (signinRes)
+            {
+                new MainPage().Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Username or Password incorrect!!", "Try again!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txt_userSI.Clear();
+                txt_passwordSI.Clear();
+                txt_userSI.Focus();
+                return;
+            }
         }
 
         private void link_signup_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

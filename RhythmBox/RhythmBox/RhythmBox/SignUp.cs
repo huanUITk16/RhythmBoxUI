@@ -8,6 +8,7 @@ namespace RhythmBox
 {
     public partial class SignUp : Form
     {
+        ApiService apiService = new ApiService();
         private string hashPassword(string password)
         {
             SHA256 sha256Hash = SHA256.Create();
@@ -92,24 +93,28 @@ namespace RhythmBox
             
         }
 
-        private void btn_signup_Click(object sender, System.EventArgs e)
+        private async void btn_signup_Click(object sender, System.EventArgs e)
         {
+            int iYear = int.Parse(txt_year.Text);
+            int iMonth = IntMonth(cbBox_month.Text);
+            int iDate = int.Parse(txt_day.Text);
+            DateTime dBirthday = new DateTime(iYear, iMonth, iDate);
+
+            bool signupRes = await apiService.SignUp(txt_userSU.Text, txt_email.Text, hashPassword(txt_passwordSU.Text), dBirthday, checkboxtostringGender());
+
             if (txt_userSU.Text == "" && txt_passwordSU.Text == "" && txt_confirmSU.Text == "")
             {
                 MessageBox.Show("Username and Password box are empty", "Try again!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txt_userSU.Focus();
 
             }
-            else if (txt_passwordSU.Text == txt_confirmSU.Text)
+            else if (txt_passwordSU.Text == txt_confirmSU.Text && signupRes)
             {
-                /* conn.Open();
-                string register = "INSERT INTO user_password VALUES ('" + txt_userSU.Text + " " + txt_passwordSU.Text + "')"; // send new username and password to database
-                cmd = new OleDbCommand(register,conn);
-                cmd.ExecuteNonQuery();
-                conn.Close(); */
-
-
                 MessageBox.Show("Your account has been created","let's sign in",MessageBoxButtons.OK, MessageBoxIcon.Information); // create account successfully
+
+                SignIn signIn = new SignIn();
+                signIn.Show();
+                this.Hide();
             }
             else 
             {
