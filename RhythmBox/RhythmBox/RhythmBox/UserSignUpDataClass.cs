@@ -25,11 +25,11 @@ namespace RhythmBox
             ImgURL = imgURL;
         }
 
-        public UserSignUpDataClass(string username, string password, string email, DateTime birthday, string gender)
+        public UserSignUpDataClass(string username, string email, string password, DateTime birthday, string gender)
         {
             Username = username;
-            Password = password;
             Email = email;
+            Password = password;
             Birthday = birthday;
             Gender = gender;
         }

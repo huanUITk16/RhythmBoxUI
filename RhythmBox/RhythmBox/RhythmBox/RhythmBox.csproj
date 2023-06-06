@@ -66,6 +66,7 @@
     <Compile Include="Album.Designer.cs">
       <DependentUpon>Album.cs</DependentUpon>
     </Compile>
+    <Compile Include="ApiService.cs" />
     <Compile Include="Artist.cs">
       <SubType>Form</SubType>
     </Compile>
