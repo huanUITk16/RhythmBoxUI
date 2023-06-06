@@ -26,7 +26,7 @@ namespace RhythmBox
 
             var content = new StringContent(userJson, Encoding.UTF8, "application/json");
 
-            var response = await httpClient.PostAsync($"{BaseUrl}/signin", content);
+            var response = await httpClient.PostAsync($"{BaseUrl}/login", content);
 
             if (response.IsSuccessStatusCode)
             {
@@ -44,7 +44,7 @@ namespace RhythmBox
 
             var content = new StringContent(userJson, Encoding.UTF8, "application/json");
 
-            var response = await httpClient.PostAsync($"{BaseUrl}/signup", content);
+            var response = await httpClient.PostAsync($"{BaseUrl}/register", content);
 
             if (response.IsSuccessStatusCode)
             {
