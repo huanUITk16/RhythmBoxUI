@@ -91,3 +91,31 @@ D:\Học tập\Lap trinh mang can ban\RhythmBoxUI\RhythmBox\RhythmBox\RhythmBox\
 E:\C#\github\RhythmBoxUI\RhythmBox\RhythmBox\RhythmBox\bin\Debug\Newtonsoft.Json.dll
 E:\C#\github\RhythmBoxUI\RhythmBox\RhythmBox\RhythmBox\bin\Debug\Newtonsoft.Json.xml
 E:\C#\github\RhythmBoxUI\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.signupGoogle.resources
+D:\Học tập\Lap trinh mang can ban\RB\RhythmBox\RhythmBox\RhythmBox\bin\Debug\RhythmBox.exe.config
+D:\Học tập\Lap trinh mang can ban\RB\RhythmBox\RhythmBox\RhythmBox\bin\Debug\RhythmBox.exe
+D:\Học tập\Lap trinh mang can ban\RB\RhythmBox\RhythmBox\RhythmBox\bin\Debug\RhythmBox.pdb
+D:\Học tập\Lap trinh mang can ban\RB\RhythmBox\RhythmBox\RhythmBox\bin\Debug\FontAwesome.Sharp.dll
+D:\Học tập\Lap trinh mang can ban\RB\RhythmBox\RhythmBox\RhythmBox\bin\Debug\Newtonsoft.Json.dll
+D:\Học tập\Lap trinh mang can ban\RB\RhythmBox\RhythmBox\RhythmBox\bin\Debug\Newtonsoft.Json.xml
+D:\Học tập\Lap trinh mang can ban\RB\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.csproj.AssemblyReference.cache
+D:\Học tập\Lap trinh mang can ban\RB\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.csproj.SuggestedBindingRedirects.cache
+D:\Học tập\Lap trinh mang can ban\RB\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.Album.resources
+D:\Học tập\Lap trinh mang can ban\RB\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.Artist.resources
+D:\Học tập\Lap trinh mang can ban\RB\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.enterCodeResetPassword.resources
+D:\Học tập\Lap trinh mang can ban\RB\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.forgotPassword.resources
+D:\Học tập\Lap trinh mang can ban\RB\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.MainPage.resources
+D:\Học tập\Lap trinh mang can ban\RB\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.playlistPage.resources
+D:\Học tập\Lap trinh mang can ban\RB\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.Profile.resources
+D:\Học tập\Lap trinh mang can ban\RB\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.resetPassword.resources
+D:\Học tập\Lap trinh mang can ban\RB\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.searchPage.resources
+D:\Học tập\Lap trinh mang can ban\RB\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.settings.resources
+D:\Học tập\Lap trinh mang can ban\RB\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.SignIn.resources
+D:\Học tập\Lap trinh mang can ban\RB\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.SignUp.resources
+D:\Học tập\Lap trinh mang can ban\RB\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.Properties.Resources.resources
+D:\Học tập\Lap trinh mang can ban\RB\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.signupGoogle.resources
+D:\Học tập\Lap trinh mang can ban\RB\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.uploadTrack.resources
+D:\Học tập\Lap trinh mang can ban\RB\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.csproj.GenerateResource.cache
+D:\Học tập\Lap trinh mang can ban\RB\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.csproj.CoreCompileInputs.cache
+D:\Học tập\Lap trinh mang can ban\RB\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.csproj.CopyComplete
+D:\Học tập\Lap trinh mang can ban\RB\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.exe
+D:\Học tập\Lap trinh mang can ban\RB\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.pdb
