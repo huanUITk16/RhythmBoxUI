@@ -8,30 +8,30 @@ namespace RhythmBox
 {
     internal class UserSignUpDataClass
     {
-        public string Username { get; set; }
-        public string Password { get; set; }
-        public string Email { get; set; }
-        public DateTime Birthday { get; set; }
-        public string Gender { get; set; }
-        public string ImgURL { get; set; } = "none";
+        public string userName { get; set; }
+        public string password { get; set; }
+        public string email { get; set; }
+        public DateTime birthday { get; set; }
+        public string gender { get; set; }
+        public string avaUrl { get; set; } = "none";
 
         public UserSignUpDataClass(string username, string password, string email, DateTime birthday, string gender, string imgURL)
         {
-            Username = username;
-            Password = password;
-            Email = email;
-            Birthday = birthday;
-            Gender = gender;
-            ImgURL = imgURL;
+            userName = username;
+            password = password;
+            email = email;
+            birthday = birthday;
+            gender = gender;
+            avaUrl = imgURL;
         }
 
         public UserSignUpDataClass(string username, string email, string password, DateTime birthday, string gender)
         {
-            Username = username;
-            Email = email;
-            Password = password;
-            Birthday = birthday;
-            Gender = gender;
+            userName = username;
+            email = email;
+            password = password;
+            birthday = birthday;
+            gender = gender;
         }
     }
 }

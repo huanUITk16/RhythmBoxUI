@@ -88,3 +88,6 @@ D:\Học tập\Lap trinh mang can ban\RhythmBoxUI\RhythmBox\RhythmBox\RhythmBox\
 D:\Học tập\Lap trinh mang can ban\RhythmBoxUI\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.csproj.CopyComplete
 D:\Học tập\Lap trinh mang can ban\RhythmBoxUI\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.exe
 D:\Học tập\Lap trinh mang can ban\RhythmBoxUI\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.pdb
+E:\C#\github\RhythmBoxUI\RhythmBox\RhythmBox\RhythmBox\bin\Debug\Newtonsoft.Json.dll
+E:\C#\github\RhythmBoxUI\RhythmBox\RhythmBox\RhythmBox\bin\Debug\Newtonsoft.Json.xml
+E:\C#\github\RhythmBoxUI\RhythmBox\RhythmBox\RhythmBox\obj\Debug\RhythmBox.signupGoogle.resources

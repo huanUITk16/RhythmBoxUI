@@ -49,7 +49,7 @@ namespace RhythmBox
 
         private async void btn_signin_Click(object sender, EventArgs e)
         {
-            bool signinRes = await apiService.SignIn(txt_userSI.Text, txt_passwordSI.Text);
+            bool signinRes = await apiService.SignIn(txt_userSI.Text, harshPassword(txt_passwordSI.Text));
 
             if (signinRes)
             {

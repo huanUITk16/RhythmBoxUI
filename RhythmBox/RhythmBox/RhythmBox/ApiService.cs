@@ -7,13 +7,14 @@ using System.Net.Http;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace RhythmBox
 {
     internal class ApiService
     {
         private readonly HttpClient httpClient;
-        private const string BaseUrl = "https://example.com/api";
+        private const string BaseUrl = "https://rhythmboxserver.azurewebsites.net/api";
 
         public ApiService()
         {
@@ -27,11 +28,13 @@ namespace RhythmBox
 
             var content = new StringContent(userJson, Encoding.UTF8, "application/json");
 
-            var response = await httpClient.PostAsync($"{BaseUrl}/login", content);
+            string requestUrl = $"{BaseUrl}/Account/login?email={username}&password={password}";
 
+            var response = await httpClient.PostAsync(requestUrl, null);
+
+            var responseJson = await response.Content.ReadAsStringAsync();
             if (response.IsSuccessStatusCode)
             {
-                var responseJson = await response.Content.ReadAsStringAsync();
                 TokenManager.SetAccessToken(responseJson);
                 return true;
             }
@@ -45,11 +48,13 @@ namespace RhythmBox
 
             var content = new StringContent(userJson, Encoding.UTF8, "application/json");
 
-            var response = await httpClient.PostAsync($"{BaseUrl}/register", content);
+            string requestUrl = $"{BaseUrl}/Account/register?userName={username}&email={email}&password={password}&birthday={birthday}&gender={gender}";
+
+            var response = await httpClient.PostAsync(requestUrl, null);
+            var responseJson = await response.Content.ReadAsStringAsync();
 
             if (response.IsSuccessStatusCode)
             {
-                var responseJson = await response.Content.ReadAsStringAsync();
                 return true;
             }
 
@@ -66,7 +71,7 @@ namespace RhythmBox
 
             var content = new StringContent(requestJson, Encoding.UTF8, "application/json");
 
-            var response = await httpClient.PostAsync($"{BaseUrl}/forgotpassword", content);
+            var response = await httpClient.PostAsync($"{BaseUrl}/api/Forgotpassword", content);
 
             if (!response.IsSuccessStatusCode)
                 return false;
