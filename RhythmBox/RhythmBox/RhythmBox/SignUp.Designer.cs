@@ -39,7 +39,6 @@
             this.btn_signup = new FontAwesome.Sharp.IconButton();
             this.label5 = new System.Windows.Forms.Label();
             this.link_signin = new System.Windows.Forms.LinkLabel();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.label11 = new System.Windows.Forms.Label();
             this.txt_year = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -189,20 +188,6 @@
             this.link_signin.TabStop = true;
             this.link_signin.Text = "Sign In";
             this.link_signin.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.link_signin_LinkClicked);
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.White;
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.linkLabel1.LinkColor = System.Drawing.Color.Firebrick;
-            this.linkLabel1.Location = new System.Drawing.Point(81, 713);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(217, 20);
-            this.linkLabel1.TabIndex = 12;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Or Sign Up With Google ";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // label11
             // 
@@ -363,7 +348,6 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txt_email);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.link_signin);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btn_signup);
@@ -400,7 +384,6 @@
         private FontAwesome.Sharp.IconButton btn_signup;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.LinkLabel link_signin;
-        private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txt_year;
         private System.Windows.Forms.Label label10;

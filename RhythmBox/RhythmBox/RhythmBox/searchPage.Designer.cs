@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(searchPage));
             this.panelMenu = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btn_upload = new FontAwesome.Sharp.IconButton();
             this.btn_album = new FontAwesome.Sharp.IconButton();
             this.btn_artist = new FontAwesome.Sharp.IconButton();
             this.btn_playlist = new FontAwesome.Sharp.IconButton();
@@ -86,6 +87,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.panel3.Controls.Add(this.btn_upload);
             this.panel3.Controls.Add(this.btn_album);
             this.panel3.Controls.Add(this.btn_artist);
             this.panel3.Controls.Add(this.btn_playlist);
@@ -93,6 +95,28 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(200, 250);
             this.panel3.TabIndex = 9;
+            // 
+            // btn_upload
+            // 
+            this.btn_upload.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_upload.FlatAppearance.BorderSize = 0;
+            this.btn_upload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_upload.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_upload.IconChar = FontAwesome.Sharp.IconChar.Upload;
+            this.btn_upload.IconColor = System.Drawing.Color.Black;
+            this.btn_upload.IconFont = FontAwesome.Sharp.IconFont.Solid;
+            this.btn_upload.IconSize = 30;
+            this.btn_upload.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_upload.Location = new System.Drawing.Point(0, 165);
+            this.btn_upload.Name = "btn_upload";
+            this.btn_upload.Padding = new System.Windows.Forms.Padding(20, 0, 20, 0);
+            this.btn_upload.Size = new System.Drawing.Size(200, 55);
+            this.btn_upload.TabIndex = 5;
+            this.btn_upload.Text = "Upload";
+            this.btn_upload.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_upload.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_upload.UseVisualStyleBackColor = true;
+            this.btn_upload.Click += new System.EventHandler(this.btn_upload_Click);
             // 
             // btn_album
             // 
@@ -600,5 +624,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox5;
+        private FontAwesome.Sharp.IconButton btn_upload;
     }
 }

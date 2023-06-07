@@ -208,5 +208,11 @@ namespace RhythmBox
             new Album().Show();
             this.Hide();
         }
+
+        private void btn_upload_Click(object sender, EventArgs e)
+        {
+            new uploadTrack ().Show();
+            this.Hide();
+        }
     }
 }

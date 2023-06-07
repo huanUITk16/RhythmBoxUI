@@ -167,5 +167,11 @@ namespace RhythmBox
             new SignIn().Show();
             this.Close();
         }
+
+        private void btn_upload_Click(object sender, EventArgs e)
+        {
+            new uploadTrack().Show();
+            this.Hide();
+        }
     }
 }

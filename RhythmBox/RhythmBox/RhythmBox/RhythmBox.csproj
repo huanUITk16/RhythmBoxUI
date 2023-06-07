@@ -142,6 +142,12 @@
       <DependentUpon>signupGoogle.cs</DependentUpon>
     </Compile>
     <Compile Include="TokenManager.cs" />
+    <Compile Include="uploadTrack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uploadTrack.Designer.cs">
+      <DependentUpon>uploadTrack.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserSignInDataClass.cs" />
     <Compile Include="UserSignUpDataClass.cs" />
     <EmbeddedResource Include="Album.resx">
@@ -191,6 +197,9 @@
     </Compile>
     <EmbeddedResource Include="signupGoogle.resx">
       <DependentUpon>signupGoogle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="uploadTrack.resx">
+      <DependentUpon>uploadTrack.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
