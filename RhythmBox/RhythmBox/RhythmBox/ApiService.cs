@@ -71,7 +71,9 @@ namespace RhythmBox
 
             var content = new StringContent(requestJson, Encoding.UTF8, "application/json");
 
-            var response = await httpClient.PostAsync($"{BaseUrl}/api/Forgotpassword", content);
+            string requestUrl = $"{BaseUrl}/Forgotpassword?email={email}";
+
+            var response = await httpClient.PostAsync(requestUrl, null);
 
             if (!response.IsSuccessStatusCode)
                 return false;
@@ -92,7 +94,9 @@ namespace RhythmBox
 
                 var content = new StringContent(otpRequestJson, Encoding.UTF8, "application/json");
 
-                var response = await httpClient.PostAsync($"{BaseUrl}/Authentication", content);
+                string requestUrl = $"{BaseUrl}/ForgotPassword/Authentication?email={email}&enteredOtp={enteredOtp}";
+
+                var response = await httpClient.PostAsync(requestUrl, null);
 
                 return response.IsSuccessStatusCode;
             }
@@ -114,7 +118,9 @@ namespace RhythmBox
 
             var content = new StringContent(requestJson, Encoding.UTF8, "application/json");
 
-            var response = await httpClient.PostAsync($"{BaseUrl}/RenewPassword", content);
+            string requestUrl = $"{BaseUrl}/Forgotpassword/RenewPassword?email={email}&newPassword={newpass}";
+
+            var response = await httpClient.PostAsync(requestUrl, null);
 
             if (!response.IsSuccessStatusCode)
                 return false;

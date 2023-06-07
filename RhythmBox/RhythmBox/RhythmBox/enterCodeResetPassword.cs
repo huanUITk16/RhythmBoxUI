@@ -12,15 +12,25 @@ namespace RhythmBox
 {
     public partial class enterCodeResetPassword : Form
     {
+        ApiService apiService = new ApiService();
+        string email = forgotPassword.enteredEmail;
         public enterCodeResetPassword()
         {
             InitializeComponent();
         }
 
-        private void btn_send_Click(object sender, EventArgs e)
+        private async void btn_send_Click(object sender, EventArgs e)
         {
-            new resetPassword().Show();
-            this.Hide();
+            int otp = int.Parse(txt_codeReset.Text);
+            bool authRes = await apiService.AuthOTP(email, otp);
+
+            if (authRes)
+            {
+                new resetPassword().Show();
+                this.Hide();
+            }
+            else
+                MessageBox.Show("Error");
         }
     }
 }

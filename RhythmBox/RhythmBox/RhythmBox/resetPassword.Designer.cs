@@ -43,7 +43,7 @@
             this.label1.Location = new System.Drawing.Point(47, 52);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(167, 25);
+            this.label1.Size = new System.Drawing.Size(139, 20);
             this.label1.TabIndex = 3;
             this.label1.Text = "Reset Password";
             // 
@@ -69,6 +69,7 @@
             this.btn_resetPassword.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_resetPassword.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_resetPassword.UseVisualStyleBackColor = false;
+            this.btn_resetPassword.Click += new System.EventHandler(this.btn_resetPassword_Click);
             // 
             // txt_newPassword
             // 
@@ -87,7 +88,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label2.Location = new System.Drawing.Point(27, 121);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(139, 20);
+            this.label2.Size = new System.Drawing.Size(117, 17);
             this.label2.TabIndex = 14;
             this.label2.Text = "New Password:";
             // 
@@ -108,13 +109,13 @@
             this.label3.ForeColor = System.Drawing.SystemColors.WindowText;
             this.label3.Location = new System.Drawing.Point(27, 185);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(211, 20);
+            this.label3.Size = new System.Drawing.Size(177, 17);
             this.label3.TabIndex = 17;
             this.label3.Text = "Confirm New Password:";
             // 
             // resetPassword
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(355, 497);
